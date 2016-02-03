@@ -18,5 +18,5 @@ Happy coding!
 The Cloud9 IDE team
 
 <h1> Demos </h1>
-C9.io  - https://job-finder-erickwendel.c9users.io <br />
-Heroku - https://young-ridge-54002.herokuapp.com
+
+ - Heroku - https://young-ridge-54002.herokuapp.com
