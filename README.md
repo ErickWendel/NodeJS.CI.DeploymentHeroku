@@ -16,6 +16,19 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
+<br />
+<h1> Tools </h1>
+ - NodeJS
+ - ExpressJS
+ - MongoDB
+ - AngularJS
+ 
+ - Mocha (for tests)
+ - C9.io 
+ - mongolab.com
+ - heroku.com
+ 
+
 
 <h1> Demos </h1>
 
