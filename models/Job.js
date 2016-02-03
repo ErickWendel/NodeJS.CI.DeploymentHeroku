@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-
 var jobSchema = mongoose.Schema({
     title: {
         type: String
@@ -10,16 +9,4 @@ var jobSchema = mongoose.Schema({
 });
 
 var Job = mongoose.model('Job', jobSchema);
-
-exports.seedJobs = function () {
-    Job.remove({}).exec(function (e,c){})
-    Job.find({}).exec(function  (error, collection) {
-        
-        if(collection.length === 0 ) {
-            Job.create({title: 'Cook', description: "One Description"});
-            Job.create({title: 'Waiter', description: "One Description"});
-            Job.create({title: 'Programmer', description: "One Description"});
-            Job.create({title: 'Axe Maker', description: "One Description"});
-        }
-    });  
-};
+exports.Job = mongoose.model('Job');

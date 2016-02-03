@@ -1,6 +1,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var JobModel = require('./models/Job');
+var jobsData = require('./jobs-data');
 var app = express();
 
 app.set('views', __dirname);
@@ -8,7 +9,7 @@ app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/api/jobs', function(req, res) {
-   mongoose.model('Job').find({}).exec(function (error, collection) {
+   jobsData.findJobs().then(function (collection) {
       res.send(collection); 
    });
 });
@@ -22,7 +23,7 @@ var connection = mongoose.connection;
 
 connection.once('open', function () {
     console.log("mongodb is running");
-   JobModel.seedJobs();
+   jobsData.seedJobs();
 });
 //using for enviroment of cloud9
 app.listen(process.env.PORT, process.env.IP);
