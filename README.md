@@ -18,11 +18,10 @@ Happy coding!
 The Cloud9 IDE team
 <br />
 <h1> Tools </h1>
- - NodeJS
- - ExpressJS
  - MongoDB
+ - ExpressJS
+ - NodeJS
  - AngularJS
- 
  - Mocha (for tests)
  - C9.io 
  - mongolab.com
