@@ -25,6 +25,8 @@ The Cloud9 IDE team
  - NodeJS
  - AngularJS
  - Mocha (for tests)
+ - Karma
+ - PhantomJS
  
 <h1>Web Tools</h1>
  - c9.io 
