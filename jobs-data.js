@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Promise = require('bluebird');
-var Job = require('./models/Job').Job;
+var Job = require('./models/Job');
 // var Job = mongoose.model('Job');
 var jobs = [{
         title: 'Cook',
