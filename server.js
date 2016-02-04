@@ -2,17 +2,17 @@ var express = require('express');
 var mongoose = require('mongoose');
 var JobModel = require('./models/Job');
 var jobsData = require('./jobs-data');
+var bodyParser = require('body-parser');
+
 var app = express();
+var jobsService = require('./jobs-service')(jobsData, app);
+
 
 app.set('views', __dirname);
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
 
-app.get('/api/jobs', function(req, res) {
-   jobsData.findJobs().then(function (collection) {
-      res.send(collection); 
-   });
-});
 app.get('*', function (req, res) {
     res.render('index');
 });
