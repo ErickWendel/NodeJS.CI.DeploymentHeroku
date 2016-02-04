@@ -28,6 +28,7 @@ The Cloud9 IDE team
  - C9.io 
  - mongolab.com
  - heroku.com
+ - https://codeship.io
  
 
 
