@@ -1,3 +1,5 @@
+[ ![Codeship Status for ErickWendel/NodeJS.CI.DeploymentHeroku](https://codeship.com/projects/98670e60-ad26-0133-7390-42dfb775ebd5/status?branch=master)](https://codeship.com/projects/131910)
+
 
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
