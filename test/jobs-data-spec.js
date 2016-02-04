@@ -16,7 +16,7 @@ Promise.promisifyAll(mongoose);
 describe('get jobs', function() {
     var jobs;
     before(function (done){
-        mongoose.connectAsync('mongodb://localhost/asasjobfinder').then(function() {
+        mongoose.connectAsync('mongodb://locaasaslhost/jobfinder').then(function() {
             resetJobs()
                 .then(jobsData.seedJobs)
                 .then(jobsData.findJobs)
